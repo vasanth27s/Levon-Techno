@@ -1,0 +1,81 @@
+.traffic-light-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: #333;
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .light.on {
+    opacity: 1;
+  }
+  
+  .green {
+    background-color: #27ae60;
+  }
+  
+  .yellow {
+    background-color: #f1c40f;
+  }
+  
+  .red {
+    background-color: #e74c3c;
+  }
+  
+  .controls {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pedestrian-btn,
+  .emergency-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pedestrian-btn:hover,
+  .emergency-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .countdown {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  @media (max-width: 768px) {
+    .light {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .pedestrian-btn,
+    .emergency-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .countdown {
+      font-size: 20px;
+    }
+  }
+  
