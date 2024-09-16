@@ -53,7 +53,7 @@ export const TrafficLightProvider = ({ children }) => {
 
       return () => clearInterval(interval);
     }
-  }, [state.currentLight, state.timer, state.isEmergency, state.pedestrianRequest]); // Added pedestrianRequest dependency
+  }, [state.currentLight, state.timer, state.isEmergency, state.pedestrianRequest]); 
 
   return (
     <TrafficLightContext.Provider value={{ state, dispatch }}>
